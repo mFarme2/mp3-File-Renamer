@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3aae0cf-4b00-4c2e-8db3-f47468d3777b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MVC_Package/rootLocation" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MVC_Package/Controller/MP3NameChangerController.java" afterPath="$PROJECT_DIR$/src/MVC_Package/Controller/MP3NameChangerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MVC_Package/View/MP3NameChangerView.java" afterPath="$PROJECT_DIR$/src/MVC_Package/View/MP3NameChangerView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musicRoot.txt" afterPath="$PROJECT_DIR$/musicRoot.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MVC_Package/model/MP3NameChangerModel.java" afterPath="$PROJECT_DIR$/src/MVC_Package/model/MP3NameChangerModel.java" />
     </list>
     <ignored path="Mp3Renamer.iws" />
@@ -52,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MP3NameChangerController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MP3NameChangerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MVC_Package/Controller/MP3NameChangerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6833713">
-              <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,15 +62,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MP3NameChangerModel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MP3NameChangerModel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MVC_Package/model/MP3NameChangerModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.38724375">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
+                <element signature="e#728#729#0" expanded="true" />
+                <element signature="e#766#767#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,9 +118,10 @@
         <option value="$PROJECT_DIR$/src/MVC_Package/Controller/PracticeController.java" />
         <option value="$PROJECT_DIR$/src/MVC_Package/rootLocation" />
         <option value="$PROJECT_DIR$/src/MVC_Package/Application/App1.java" />
-        <option value="$PROJECT_DIR$/src/MVC_Package/model/MP3NameChangerModel.java" />
         <option value="$PROJECT_DIR$/src/MVC_Package/View/MP3NameChangerView.java" />
         <option value="$PROJECT_DIR$/src/MVC_Package/Controller/MP3NameChangerController.java" />
+        <option value="$PROJECT_DIR$/musicRoot.txt" />
+        <option value="$PROJECT_DIR$/src/MVC_Package/model/MP3NameChangerModel.java" />
       </list>
     </option>
   </component>
@@ -520,7 +521,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -607,8 +608,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -657,8 +660,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -687,8 +692,10 @@
           <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -737,8 +744,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -787,8 +796,10 @@
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -830,23 +841,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MVC_Package/Controller/MP3NameChangerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/musicRoot.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MVC_Package/model/MP3NameChangerModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -870,12 +879,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MVC_Package/Controller/MP3NameChangerController.java">
+    <entry file="file://$PROJECT_DIR$/src/MVC_Package/model/MP3NameChangerModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6833713">
-          <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.38724375">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
           </folding>
         </state>
       </provider>
