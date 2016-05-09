@@ -1,5 +1,6 @@
 package MVC_Package.Controller;
 
+import InterfAndObjs.updateObj;
 import MVC_Package.View.MP3NameChangerView;
 import MVC_Package.model.MP3NameChangerModel;
 
@@ -44,7 +45,7 @@ public class MP3NameChangerController {
     /**
      * Updates the view that the working directory has changed.
      */
-    public void updateWorkingPath(File path){
-        view.updateDirPathLable(path);
+    public void updateView(updateObj obj){
+        view.update(obj);
     }
 }

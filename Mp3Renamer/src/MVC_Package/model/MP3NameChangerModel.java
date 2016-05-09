@@ -1,5 +1,6 @@
 package MVC_Package.model;
 
+import InterfAndObjs.updateObj;
 import MVC_Package.Controller.MP3NameChangerController;
 import com.sun.org.apache.xpath.internal.SourceTree;
 
@@ -53,7 +54,7 @@ public class MP3NameChangerModel {
                 } else {
                     controller.selectRootDir();
                 }
-                controller.updateWorkingPath(workingDir);
+                controller.updateView(new updateObj(workingDir));
                 read.close();
             } catch (FileNotFoundException ex){
                 System.out.println(ex.getMessage());
@@ -89,6 +90,6 @@ public class MP3NameChangerModel {
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
-        controller.updateWorkingPath(workingDir);
+        controller.updateView(new updateObj(workingDir));
     }
 }
