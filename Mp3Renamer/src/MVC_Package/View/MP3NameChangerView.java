@@ -3,7 +3,6 @@ package MVC_Package.View;
 import MVC_Package.Controller.MP3NameChangerController;
 
 import java.io.File;
-import java.nio.file.Path;
 
 /**
  * @author Morgan
@@ -123,21 +122,21 @@ public class MP3NameChangerView extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void changeDirButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_workingDirButtonActionPerformed
+    private void changeDirButtonActionPerformed(java.awt.event.ActionEvent evt) {
         controller.selectRootDir();
-    }//GEN-LAST:event_workingDirButtonActionPerformed
+    }
 
-    private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelButtonActionPerformed
+    private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {
         System.exit(0);
     }
 
-    private void reformatButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reformatButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_reformatButtonActionPerformed
+    private void reformatButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        //Reformat all selected files.
+    }
 
-    private void formatComboPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_formatComboPropertyChange
+    private void formatComboPropertyChange(java.beans.PropertyChangeEvent evt) {
         // TODO add your handling code here:
-    }//GEN-LAST:event_formatComboPropertyChange
+    }
 
     public void updateDirPathLable(File path){
         dirPathLable.setText(path.getAbsolutePath());

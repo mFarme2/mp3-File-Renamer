@@ -3,8 +3,11 @@ package MVC_Package.model;
 import MVC_Package.Controller.MP3NameChangerController;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * Created by Morgan on 5/1/2016.
@@ -12,6 +15,7 @@ import java.util.ArrayList;
 public class MP3NameChangerModel {
 
     private File workingDir;
+    private String absolutePath = new File("").getAbsolutePath(); //used to work relatively with directory
     private ArrayList<Path> mp3FilesList;
     private MP3NameChangerController controller;
 
@@ -32,14 +36,34 @@ public class MP3NameChangerModel {
     }
 
     public void update(){
-        rootTest();
+        //Things to do upon start up. Need to check for location file, if none make one then prompt user for root
+        //once we know music file location, we need to walk the file and take all .mp3 files. update the view.
+        checkForMusicLoc();
     }
 
-    private void rootTest(){
-        File f = new File("C://Users//Morgan//IdeaProjects//Mp3Renamer//src//MVC_Package//rootLocation");
-        System.out.println(f.isFile());
-        if (f.isFile()){
-            controller.updateWorkingPath(f);
+    private void checkForMusicLoc(){
+        File file = new File("musicRoot.txt");
+        if (file.isFile()){
+            try {
+                Scanner read = new Scanner(file);
+                if (read.hasNext()) {
+                    workingDir = new File(read.next());
+                } else {
+                    controller.selectRootDir();
+                }
+                controller.updateWorkingPath(workingDir);
+                read.close();
+            } catch (FileNotFoundException ex){
+                System.out.println(ex.getMessage());
+            }
+        } else {
+            try {
+                PrintWriter writer = new PrintWriter(file);
+                writer.println("Blah");
+                writer.close();
+            } catch (FileNotFoundException ex) {
+                System.out.println(ex.getMessage());
+            }
         }
     }
 

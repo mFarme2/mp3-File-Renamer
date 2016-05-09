@@ -1,6 +1,6 @@
 package MVC_Package.Controller;
+
 import MVC_Package.View.MP3NameChangerView;
-import MVC_Package.View.PracticeView;
 import MVC_Package.model.MP3NameChangerModel;
 
 import javax.swing.*;
@@ -26,15 +26,18 @@ public class MP3NameChangerController {
      * Opens a file chooser dialog. If a valid directory is chosen, then the working path will be updated in the model.
      */
     public void selectRootDir(){
-        JFileChooser chooser = new JFileChooser();
-        chooser.setCurrentDirectory(new java.io.File("."));
-        chooser.setDialogTitle("Select Root Directory");
-        chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-        chooser.setAcceptAllFileFilterUsed(false);
-        if (chooser.showOpenDialog(view.getContentPane()) == JFileChooser.APPROVE_OPTION){
-            model.setWorkingDir(chooser.getSelectedFile());
-        } else {
-            System.out.println("No selection ");
+        while (true) {
+            JFileChooser chooser = new JFileChooser();
+            chooser.setCurrentDirectory(new java.io.File("."));
+            chooser.setDialogTitle("Select Root Directory");
+            chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+            chooser.setAcceptAllFileFilterUsed(false);
+            if (chooser.showOpenDialog(view.getContentPane()) == JFileChooser.APPROVE_OPTION) {
+                model.setWorkingDir(chooser.getSelectedFile());
+                break;
+            } else {
+                JOptionPane.showMessageDialog(null,"Need a root!\n please select a root!");
+            }
         }
     }
 
