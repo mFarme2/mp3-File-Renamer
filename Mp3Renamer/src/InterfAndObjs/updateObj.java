@@ -1,19 +1,18 @@
 package InterfAndObjs;
 
-import java.io.File;
 import java.nio.file.Path;
 import java.util.ArrayList;
 
 /**
- * Created by Morgan on 5/9/2016.
+ * Created by Morgan Farmer on 5/9/2016.
  */
 public class updateObj {
     private boolean hasNewSongDir = false;
     private boolean hasNewMp3Paths = false;
-    private File newSongDir = null;
+    private Path newSongDir = null;
     private ArrayList<Path> newMp3Paths = new ArrayList<>();
 
-    public updateObj(File f){
+    public updateObj(Path f){
         newSongDir = f;
         hasNewSongDir = true;
     }
@@ -23,7 +22,7 @@ public class updateObj {
         hasNewMp3Paths = true;
     }
 
-    public updateObj(File f, ArrayList<Path> paths){
+    public updateObj(Path f, ArrayList<Path> paths){
         newSongDir = f;
         hasNewSongDir = true;
         newMp3Paths = paths;
@@ -38,7 +37,7 @@ public class updateObj {
         return hasNewMp3Paths;
     }
 
-    public void passNewDir(File f){
+    public void passNewDir(Path f){
         newSongDir = f;
         hasNewSongDir = true;
     }
@@ -48,7 +47,7 @@ public class updateObj {
         hasNewMp3Paths = true;
     }
 
-    public File getNewPath(){
+    public Path getNewPath(){
         return newSongDir;
     }
 

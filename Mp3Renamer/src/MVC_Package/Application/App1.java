@@ -2,13 +2,12 @@ package MVC_Package.Application;
 
 import MVC_Package.Controller.MP3NameChangerController;
 import MVC_Package.View.MP3NameChangerView;
-import MVC_Package.View.PracticeView;
-import MVC_Package.model.MP3NameChangerModel;
+import MVC_Package.Model.MP3NameChangerModel;
 
-import javax.swing.*;
+import javax.swing.SwingUtilities;
 
 /**
- * Created by Morgan on 5/1/2016.
+ * Created by Morgan Farmer on 5/1/2016.
  */
 public class App1 {
     private static MP3NameChangerController controller;

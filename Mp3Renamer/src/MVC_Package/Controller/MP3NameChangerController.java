@@ -2,14 +2,12 @@ package MVC_Package.Controller;
 
 import InterfAndObjs.updateObj;
 import MVC_Package.View.MP3NameChangerView;
-import MVC_Package.model.MP3NameChangerModel;
+import MVC_Package.Model.MP3NameChangerModel;
 
 import javax.swing.*;
-import java.io.File;
-import java.nio.file.Path;
 
 /**
- * Created by Morgan on 5/1/2016.
+ * Created by Morgan Farmer on 5/1/2016.
  */
 public class MP3NameChangerController {
     private MP3NameChangerModel model;
@@ -24,7 +22,7 @@ public class MP3NameChangerController {
     }
 
     /**
-     * Opens a file chooser dialog. If a valid directory is chosen, then the working path will be updated in the model.
+     * Opens a file chooser dialog. If a valid directory is chosen, then the working path will be updated in the Model.
      */
     public void selectRootDir(){
         while (true) {
@@ -34,7 +32,7 @@ public class MP3NameChangerController {
             chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
             chooser.setAcceptAllFileFilterUsed(false);
             if (chooser.showOpenDialog(view.getContentPane()) == JFileChooser.APPROVE_OPTION) {
-                model.setWorkingDir(chooser.getSelectedFile());
+                model.setWorkingDir(chooser.getSelectedFile().toPath());
                 break;
             } else {
                 JOptionPane.showMessageDialog(null,"Need a root!\n please select a root!");
@@ -48,4 +46,5 @@ public class MP3NameChangerController {
     public void updateView(updateObj obj){
         view.update(obj);
     }
+
 }

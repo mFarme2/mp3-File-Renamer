@@ -7,7 +7,7 @@ import MVC_Package.Controller.MP3NameChangerController;
 import java.io.File;
 
 /**
- * @author Morgan
+ * @author Morgan Farmer
  */
 public class MP3NameChangerView extends javax.swing.JFrame implements MP3Viewable {
     private MP3NameChangerController controller;
@@ -142,7 +142,7 @@ public class MP3NameChangerView extends javax.swing.JFrame implements MP3Viewabl
 
     public void update(updateObj obj){
         if (obj.hasNewDir()){
-            dirPathLable.setText(obj.getNewPath().getAbsolutePath());
+            dirPathLable.setText(obj.getNewPath().toAbsolutePath().toString());
         }
         if (obj.hasNewPaths()){
             System.out.println("update the table here. this has new paths");
