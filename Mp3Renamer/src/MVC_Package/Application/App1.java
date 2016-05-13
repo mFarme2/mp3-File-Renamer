@@ -18,15 +18,12 @@ public class App1 {
         SwingUtilities.invokeLater(new Runnable(){
             @Override
             public void run(){
-
                 controller = new MP3NameChangerController();
                 model = new MP3NameChangerModel(controller);
                 view = new MP3NameChangerView(controller);
 
-                view.setVisible(true);
+                //view.setVisible(true);
                 controller.setModelAndView(view, model);
-                model.update();
-
             }
         });
     }

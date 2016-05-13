@@ -5,6 +5,8 @@ import InterfAndObjs.updateObj;
 import MVC_Package.Controller.MP3NameChangerController;
 
 import java.io.File;
+import java.nio.file.Path;
+import java.util.ArrayList;
 
 /**
  * @author Morgan Farmer
@@ -145,7 +147,12 @@ public class MP3NameChangerView extends javax.swing.JFrame implements MP3Viewabl
             dirPathLable.setText(obj.getNewPath().toAbsolutePath().toString());
         }
         if (obj.hasNewPaths()){
-            System.out.println("update the table here. this has new paths");
+            list1.removeAll();
+            for (Path p: obj.getNewMp3Paths()) {
+                list1.add(p.getFileName().toString());
+            }
+            this.setVisible(true);
+            //System.out.println("update the table here. this has new paths");
         }
     }
 
