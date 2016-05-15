@@ -29,6 +29,14 @@ public class updateObj {
         hasNewMp3Paths = true;
     }
 
+    public void clear(){
+        newSongDir = null;
+        hasNewSongDir = false;
+        newMp3Paths = null;
+        hasNewMp3Paths = false;
+
+    }
+
     public boolean hasNewDir(){
         return hasNewSongDir;
     }

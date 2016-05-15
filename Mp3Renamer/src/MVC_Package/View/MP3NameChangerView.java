@@ -136,6 +136,7 @@ public class MP3NameChangerView extends javax.swing.JFrame implements MP3Viewabl
 
     private void reformatButtonActionPerformed(java.awt.event.ActionEvent evt) {
         //Reformat all selected files.
+        controller.convertMp3FileName(formatCombo.getSelectedItem().toString());
     }
 
     private void formatComboPropertyChange(java.beans.PropertyChangeEvent evt) {

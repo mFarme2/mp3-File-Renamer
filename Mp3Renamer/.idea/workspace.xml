@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3aae0cf-4b00-4c2e-8db3-f47468d3777b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/musicRoot.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musicRoot.txt" afterPath="$PROJECT_DIR$/musicRoot.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/InterfAndObjs/updateObj.java" afterPath="$PROJECT_DIR$/src/InterfAndObjs/updateObj.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MVC_Package/Application/App1.java" afterPath="$PROJECT_DIR$/src/MVC_Package/Application/App1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MVC_Package/Controller/MP3NameChangerController.java" afterPath="$PROJECT_DIR$/src/MVC_Package/Controller/MP3NameChangerController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MVC_Package/View/MP3NameChangerView.java" afterPath="$PROJECT_DIR$/src/MVC_Package/View/MP3NameChangerView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MVC_Package/model/MP3NameChangerModel.java" afterPath="$PROJECT_DIR$/src/MVC_Package/model/MP3NameChangerModel.java" />
     </list>
     <ignored path="Mp3Renamer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,30 +35,34 @@
       <file leaf-file-name="MP3NameChangerView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MVC_Package/View/MP3NameChangerView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="153" column="34" selection-start-line="153" selection-start-column="34" selection-end-line="153" selection-end-column="34" />
+            <state vertical-scroll-proportion="9.0">
+              <caret line="138" column="18" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
                 <element signature="e#912#1001#0" expanded="true" />
-                <element signature="method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
                 <element signature="e#6907#6908#0" expanded="true" />
                 <element signature="e#6949#6950#0" expanded="true" />
-                <element signature="e#7951#8038#0" expanded="true" />
+                <element signature="e#8032#8119#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MP3NameChangerController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MP3NameChangerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MVC_Package/Controller/MP3NameChangerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.8137932">
-              <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="172" column="34" selection-start-line="172" selection-start-column="34" selection-end-line="172" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4651#4652#0" expanded="true" />
-                <element signature="e#4683#4684#0" expanded="true" />
+                <element signature="e#799#800#0" expanded="true" />
+                <element signature="e#831#832#0" expanded="true" />
+                <element signature="docComment;method#selectRootDir#0;class#MP3NameChangerController#0" expanded="false" />
+                <element signature="docComment;method#updateMusicLoc#0;class#MP3NameChangerController#0" expanded="false" />
+                <element signature="docComment;method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+                <element signature="method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+                <element signature="docComment;method#updateView#0;class#MP3NameChangerController#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -68,29 +72,29 @@
         <entry file="file://$PROJECT_DIR$/src/MVC_Package/Model/MP3NameChangerModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+              <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#708#709#0" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#800#801#0" expanded="true" />
-                <element signature="e#835#836#0" expanded="true" />
-                <element signature="e#1017#1018#0" expanded="true" />
-                <element signature="e#1058#1059#0" expanded="true" />
-                <element signature="e#1093#1094#0" expanded="true" />
-                <element signature="e#1126#1127#0" expanded="true" />
-                <element signature="e#1178#1179#0" expanded="true" />
-                <element signature="e#1220#1221#0" expanded="true" />
+                <element signature="e#701#702#0" expanded="true" />
+                <element signature="e#745#746#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
+                <element signature="e#828#829#0" expanded="true" />
+                <element signature="e#1003#1004#0" expanded="true" />
+                <element signature="e#1044#1045#0" expanded="true" />
+                <element signature="e#1079#1080#0" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
+                <element signature="e#1164#1165#0" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App1.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MVC_Package/Application/App1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.6896552">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,16 +133,16 @@
         <option value="$PROJECT_DIR$/src/MVC_Package/Controller/PracticeController.java" />
         <option value="$PROJECT_DIR$/src/MVC_Package/rootLocation" />
         <option value="$PROJECT_DIR$/src/MVC_Package/model/MP3NameChangerModel.java" />
-        <option value="$PROJECT_DIR$/src/InterfAndObjs/updateObj.java" />
         <option value="$PROJECT_DIR$/src/InterfAndObjs/MP3Viewable.java" />
         <option value="$PROJECT_DIR$/src/InterfAndObjs/Mp3FileVisitor.java" />
         <option value="$PROJECT_DIR$/src/InterfAndObjs/Mp3FileFilter.java" />
         <option value="$PROJECT_DIR$/src/InterfAndObjs/Mp3FilenameFilter.java" />
-        <option value="$PROJECT_DIR$/src/MVC_Package/Model/MP3NameChangerModel.java" />
         <option value="$PROJECT_DIR$/musicRoot.txt" />
-        <option value="$PROJECT_DIR$/src/MVC_Package/Controller/MP3NameChangerController.java" />
+        <option value="$PROJECT_DIR$/src/InterfAndObjs/updateObj.java" />
         <option value="$PROJECT_DIR$/src/MVC_Package/Application/App1.java" />
+        <option value="$PROJECT_DIR$/src/MVC_Package/Model/MP3NameChangerModel.java" />
         <option value="$PROJECT_DIR$/src/MVC_Package/View/MP3NameChangerView.java" />
+        <option value="$PROJECT_DIR$/src/MVC_Package/Controller/MP3NameChangerController.java" />
       </list>
     </option>
   </component>
@@ -193,6 +197,60 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mp3Renamer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jid3lib-0.5.4.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mp3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mp3Renamer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jid3lib-0.5.4.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mp3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filename" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mp3Renamer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jid3lib-0.5.4.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -699,10 +757,9 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#912#1001#0" expanded="true" />
-            <element signature="method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#6907#6908#0" expanded="true" />
             <element signature="e#6949#6950#0" expanded="true" />
-            <element signature="e#7951#8038#0" expanded="true" />
+            <element signature="e#8032#8119#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -713,8 +770,13 @@
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4651#4652#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="docComment;method#selectRootDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateMusicLoc#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateView#0;class#MP3NameChangerController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -725,16 +787,16 @@
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -747,10 +809,9 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#912#1001#0" expanded="true" />
-            <element signature="method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#6907#6908#0" expanded="true" />
             <element signature="e#6949#6950#0" expanded="true" />
-            <element signature="e#7951#8038#0" expanded="true" />
+            <element signature="e#8032#8119#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -761,8 +822,13 @@
           <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4651#4652#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="docComment;method#selectRootDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateMusicLoc#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateView#0;class#MP3NameChangerController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -773,16 +839,16 @@
           <caret line="92" column="57" selection-start-line="92" selection-start-column="57" selection-end-line="92" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -813,10 +879,9 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#912#1001#0" expanded="true" />
-            <element signature="method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#6907#6908#0" expanded="true" />
             <element signature="e#6949#6950#0" expanded="true" />
-            <element signature="e#7951#8038#0" expanded="true" />
+            <element signature="e#8032#8119#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -827,8 +892,13 @@
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4651#4652#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="docComment;method#selectRootDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateMusicLoc#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateView#0;class#MP3NameChangerController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -839,16 +909,16 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -871,10 +941,9 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#912#1001#0" expanded="true" />
-            <element signature="method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#6907#6908#0" expanded="true" />
             <element signature="e#6949#6950#0" expanded="true" />
-            <element signature="e#7951#8038#0" expanded="true" />
+            <element signature="e#8032#8119#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -885,8 +954,13 @@
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4651#4652#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="docComment;method#selectRootDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateMusicLoc#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateView#0;class#MP3NameChangerController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -897,16 +971,16 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -927,8 +1001,13 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4651#4652#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="docComment;method#selectRootDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateMusicLoc#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateView#0;class#MP3NameChangerController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -939,16 +1018,16 @@
           <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -971,10 +1050,9 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#912#1001#0" expanded="true" />
-            <element signature="method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#6907#6908#0" expanded="true" />
             <element signature="e#6949#6950#0" expanded="true" />
-            <element signature="e#7951#8038#0" expanded="true" />
+            <element signature="e#8032#8119#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -985,8 +1063,13 @@
           <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4651#4652#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="docComment;method#selectRootDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateMusicLoc#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateView#0;class#MP3NameChangerController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -997,16 +1080,16 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1029,10 +1112,9 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#912#1001#0" expanded="true" />
-            <element signature="method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#6907#6908#0" expanded="true" />
             <element signature="e#6949#6950#0" expanded="true" />
-            <element signature="e#7951#8038#0" expanded="true" />
+            <element signature="e#8032#8119#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1043,8 +1125,13 @@
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4651#4652#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="docComment;method#selectRootDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateMusicLoc#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateView#0;class#MP3NameChangerController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1055,16 +1142,16 @@
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1100,16 +1187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/InterfAndObjs/updateObj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12072893">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/InterfAndObjs/MP3Viewable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27107063">
@@ -1126,60 +1203,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MVC_Package/Model/MP3NameChangerModel.java">
+    <entry file="file://$PROJECT_DIR$/src/InterfAndObjs/updateObj.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.82988507">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="method#passNewMp3Paths#0;class#updateObj#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MVC_Package/Application/App1.java">
+    <entry file="file://$PROJECT_DIR$/hs_err_pid5720.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.92183906">
+          <caret line="188" column="0" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/jid3lib-0.5.4/jid3lib-0.5.4/dist/jid3lib-0.5.4.jar!/org/farng/mp3/MP3File.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4074073">
+          <caret line="182" column="35" selection-start-line="182" selection-start-column="35" selection-end-line="182" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/jid3lib-0.5.4/jid3lib-0.5.4/dist/jid3lib-0.5.4.jar!/org/farng/mp3/TagOptionSingleton.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.375">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MVC_Package/View/MP3NameChangerView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="153" column="34" selection-start-line="153" selection-start-column="34" selection-end-line="153" selection-end-column="34" />
+        <state vertical-scroll-proportion="9.0">
+          <caret line="138" column="18" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#912#1001#0" expanded="true" />
-            <element signature="method#initComponents#0;class#MP3NameChangerView#0" expanded="false" />
             <element signature="e#6907#6908#0" expanded="true" />
             <element signature="e#6949#6950#0" expanded="true" />
-            <element signature="e#7951#8038#0" expanded="true" />
+            <element signature="e#8032#8119#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MVC_Package/Controller/MP3NameChangerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.8137932">
-          <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="172" column="34" selection-start-line="172" selection-start-column="34" selection-end-line="172" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4651#4652#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="docComment;method#selectRootDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateMusicLoc#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="method#ChangeWorkingDir#0;class#MP3NameChangerController#0" expanded="false" />
+            <element signature="docComment;method#updateView#0;class#MP3NameChangerController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MVC_Package/Model/MP3NameChangerModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MVC_Package/Application/App1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6896552">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

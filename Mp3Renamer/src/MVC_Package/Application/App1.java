@@ -24,6 +24,7 @@ public class App1 {
 
                 //view.setVisible(true);
                 controller.setModelAndView(view, model);
+                controller.updateModel();
             }
         });
     }

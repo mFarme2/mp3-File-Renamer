@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class MP3NameChangerModel {
     private MP3NameChangerController controller;
 
-    private static final String DIRECTORY_FILE_TXT = "musicRoot.txt";
+    private final String DIRECTORY_FILE_TXT = "musicRoot.txt";
     private Path workingDir;
     private ArrayList<Path> mp3FilesList = new ArrayList<>();
 
@@ -33,7 +33,7 @@ public class MP3NameChangerModel {
         System.out.println("Added: " + p.getFileName());
     }
 
-    public static String getDirectoryFileTxt() {
+    public String getDirectoryFileTxt() {
         return DIRECTORY_FILE_TXT;
     }
 

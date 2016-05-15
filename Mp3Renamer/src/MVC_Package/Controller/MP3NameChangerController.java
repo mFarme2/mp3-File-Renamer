@@ -3,6 +3,8 @@ package MVC_Package.Controller;
 import InterfAndObjs.updateObj;
 import MVC_Package.View.MP3NameChangerView;
 import MVC_Package.Model.MP3NameChangerModel;
+import org.farng.mp3.MP3File;
+import org.farng.mp3.TagException;
 
 import javax.swing.*;
 import java.io.File;
@@ -25,7 +27,9 @@ public class MP3NameChangerController {
     public void setModelAndView(MP3NameChangerView view, MP3NameChangerModel model){
         this.view = view;
         this.model = model;
+    }
 
+    public void updateModel(){
         updateMusicLoc();
     }
 
@@ -118,7 +122,6 @@ public class MP3NameChangerController {
         updateView(new updateObj(model.getWorkingDir(), model.getMp3FilesList()));
     }
 
-
     private void updateMp3Paths(String path) {
         File[] files = new File(path).listFiles();
 
@@ -140,4 +143,45 @@ public class MP3NameChangerController {
         view.update(obj);
     }
 
+    /**
+     * ConvertMp3FileName takes in a string that holds a pattern a cycles through the current
+     * arrayList of mp3Files and changes them according to the pattern. This will make use of the
+     * jid3lib library to grab metadata from the audio files.
+     */
+    public void convertMp3FileName(String pattern){
+
+        for (Path p: model.getMp3FilesList()) {
+            try {
+                MP3File file = new MP3File(p.toFile());
+
+                if (file.hasID3v1Tag() && (!file.getID3v1Tag().getSongTitle().equals("")) && (!file.getID3v1Tag().getTrackNumberOnAlbum().equals("0"))){
+                    String newName = "";
+                    int trackNum = Integer.parseInt(file.getID3v1Tag().getTrackNumberOnAlbum());
+                    switch(pattern){
+                        case "## - Song Title.mp3":
+                            newName = String.format("%02d",trackNum) + " - " + file.getID3v1Tag().getSongTitle() + ".mp3";
+                            break;
+                        case "### - Song Title.mp3":
+                            newName = String.format("%03d",trackNum) + " - " + file.getID3v1Tag().getSongTitle() + ".mp3";
+                            break;
+                        case "SongTitle.mp3":
+                            newName = file.getID3v1Tag().getSongTitle() + ".mp3";
+                            break;
+                        default:
+                            //should never happen as the view I made uses a comboBox to select format, but if someone adds more options, it should will show error
+                            JOptionPane.showMessageDialog(null,"Error!\n Unrecognized rename format!");
+                            break;
+                    }
+                    System.out.println(newName);
+                } else {
+                    System.out.println("File " + file.getMp3file().getName() + " is missing required ID3v1 Tags");
+                }
+
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            } catch (TagException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
 }
