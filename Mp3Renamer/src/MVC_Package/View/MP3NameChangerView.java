@@ -4,9 +4,8 @@ import InterfAndObjs.MP3Viewable;
 import InterfAndObjs.updateObj;
 import MVC_Package.Controller.MP3NameChangerController;
 
-import java.io.File;
+import javax.swing.*;
 import java.nio.file.Path;
-import java.util.ArrayList;
 
 /**
  * @author Morgan Farmer
@@ -16,10 +15,6 @@ public class MP3NameChangerView extends javax.swing.JFrame implements MP3Viewabl
     /**
      * Creates new form MP3NameChangerView
      */
-    public MP3NameChangerView() {
-        initComponents();
-    }
-
     public MP3NameChangerView(MP3NameChangerController controller) {
         this.controller = controller;
         initComponents();
@@ -136,7 +131,10 @@ public class MP3NameChangerView extends javax.swing.JFrame implements MP3Viewabl
 
     private void reformatButtonActionPerformed(java.awt.event.ActionEvent evt) {
         //Reformat all selected files.
-        controller.convertMp3FileName(formatCombo.getSelectedItem().toString());
+        int decision = JOptionPane.showConfirmDialog(null, "Process will modify files on your computer! \n Is that okay?", "Warning", JOptionPane.YES_NO_OPTION);
+        if (decision == JOptionPane.YES_OPTION) {
+            controller.convertMp3FileName(formatCombo.getSelectedItem().toString());
+        }
     }
 
     private void formatComboPropertyChange(java.beans.PropertyChangeEvent evt) {

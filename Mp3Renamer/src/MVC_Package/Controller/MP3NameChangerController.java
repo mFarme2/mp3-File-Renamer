@@ -21,12 +21,15 @@ public class MP3NameChangerController {
     private MP3NameChangerModel model;
     private MP3NameChangerView view;
 
+    private boolean modelAndViewSetYet = false; //controller must set model and view before any methods can be used.
+
     public MP3NameChangerController(){
     }
 
     public void setModelAndView(MP3NameChangerView view, MP3NameChangerModel model){
         this.view = view;
         this.model = model;
+        modelAndViewSetYet = true;
     }
 
     public void updateModel(){
@@ -34,9 +37,22 @@ public class MP3NameChangerController {
     }
 
     /**
+     * Checks for variables needed to run the controller. If any of the nessesary dependencies are not met,
+     * the program will shut down and tell the user why.
+     */
+    private void checkForNeededVars(){
+        if (!this.modelAndViewSetYet){
+            System.out.println("Must set View and Controller");
+            System.exit(-1);
+        }
+    }
+
+    /**
      * Opens a file chooser dialog. If a valid directory is chosen, then the working path will be updated in the Model.
      */
     public void selectRootDir(){
+        checkForNeededVars();
+
         File f;
         if (model.getWorkingDir() == null){
             f = new File(".");
@@ -63,6 +79,8 @@ public class MP3NameChangerController {
      * it creates one.
      */
     public void updateMusicLoc(){
+        checkForNeededVars();
+
         File file = new File(model.getDirectoryFileTxt());
         if (file.isFile()){
             try {
@@ -101,6 +119,8 @@ public class MP3NameChangerController {
      * Finally tells the view(s) to update.
      */
     public void ChangeWorkingDir(Path f){
+        checkForNeededVars();
+
         model.setWorkingDir(f);
         try{
             //Delete old file...
@@ -122,7 +142,12 @@ public class MP3NameChangerController {
         updateView(new updateObj(model.getWorkingDir(), model.getMp3FilesList()));
     }
 
+    /**
+     * recursively traverses through the music root currently selected and adds files that are of mp3 type
+     */
     private void updateMp3Paths(String path) {
+        checkForNeededVars();
+
         File[] files = new File(path).listFiles();
 
         if (files == null) return;
@@ -140,6 +165,8 @@ public class MP3NameChangerController {
      * Updates the view that the working directory has changed.
      */
     public void updateView(updateObj obj){
+        checkForNeededVars();
+
         view.update(obj);
     }
 
@@ -149,10 +176,12 @@ public class MP3NameChangerController {
      * jid3lib library to grab metadata from the audio files.
      */
     public void convertMp3FileName(String pattern){
+        checkForNeededVars();
 
         for (Path p: model.getMp3FilesList()) {
             try {
                 MP3File file = new MP3File(p.toFile());
+                String pathToFolder = file.getMp3file().getParent() + "\\";
 
                 if (file.hasID3v1Tag() && (!file.getID3v1Tag().getSongTitle().equals("")) && (!file.getID3v1Tag().getTrackNumberOnAlbum().equals("0"))){
                     String newName = "";
@@ -168,11 +197,23 @@ public class MP3NameChangerController {
                             newName = file.getID3v1Tag().getSongTitle() + ".mp3";
                             break;
                         default:
-                            //should never happen as the view I made uses a comboBox to select format, but if someone adds more options, it should will show error
+                            //should never happen as the view I made uses a comboBox to select
+                            //format, but if someone adds more options, it should will show error
                             JOptionPane.showMessageDialog(null,"Error!\n Unrecognized rename format!");
                             break;
                     }
-                    System.out.println(newName);
+                    //rename file if a pattern matches a predefined pattern and the newName is generated.
+                    if (!newName.equals("")){
+                        File newFile = new File(pathToFolder + newName);
+                        try {
+                            file.getMp3file().renameTo(newFile);
+                        } catch (NullPointerException e){
+                            System.out.println(e.getMessage());
+                        } catch (SecurityException e){
+                            System.out.println(e.getMessage());
+                        }
+                    }
+
                 } else {
                     System.out.println("File " + file.getMp3file().getName() + " is missing required ID3v1 Tags");
                 }
@@ -182,6 +223,10 @@ public class MP3NameChangerController {
             } catch (TagException e) {
                 System.out.println(e.getMessage());
             }
+
+            model.getMp3FilesList().clear();
+            updateMp3Paths(model.getWorkingDir().toString());
+            updateView(new updateObj(model.getMp3FilesList()));
         }
     }
 }
