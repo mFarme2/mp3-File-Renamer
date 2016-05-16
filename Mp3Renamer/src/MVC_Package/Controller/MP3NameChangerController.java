@@ -178,23 +178,35 @@ public class MP3NameChangerController {
     public void convertMp3FileName(String pattern){
         checkForNeededVars();
 
-        for (Path p: model.getMp3FilesList()) {
+        int arrayListNumber = model.getMp3FilesList().size();
+
+
+        for (int i = 0; i < arrayListNumber; i++) {
             try {
-                MP3File file = new MP3File(p.toFile());
+                MP3File file = new MP3File(model.getMp3FilesList().get(i).toFile());
                 String pathToFolder = file.getMp3file().getParent() + "\\";
+                int trackNum = 0;
+                String trackName = "";
 
                 if (file.hasID3v1Tag() && (!file.getID3v1Tag().getSongTitle().equals("")) && (!file.getID3v1Tag().getTrackNumberOnAlbum().equals("0"))){
+                    trackNum = Integer.parseInt(file.getID3v1Tag().getTrackNumberOnAlbum());
+                    trackName = file.getID3v1Tag().getSongTitle();
+                } else if (file.hasID3v2Tag() && (!file.getID3v2Tag().getSongTitle().equals("")) && (!file.getID3v2Tag().getTrackNumberOnAlbum().equals("0"))){
+                    trackNum = Integer.parseInt(file.getID3v2Tag().getTrackNumberOnAlbum());
+                    trackName = file.getID3v2Tag().getSongTitle();
+                }
+
+                if (!trackName.equals("") && trackNum != 0){
                     String newName = "";
-                    int trackNum = Integer.parseInt(file.getID3v1Tag().getTrackNumberOnAlbum());
                     switch(pattern){
                         case "## - Song Title.mp3":
-                            newName = String.format("%02d",trackNum) + " - " + file.getID3v1Tag().getSongTitle() + ".mp3";
+                            newName = String.format("%02d",trackNum) + " - " + trackName + ".mp3";
                             break;
                         case "### - Song Title.mp3":
-                            newName = String.format("%03d",trackNum) + " - " + file.getID3v1Tag().getSongTitle() + ".mp3";
+                            newName = String.format("%03d",trackNum) + " - " + trackName + ".mp3";
                             break;
                         case "SongTitle.mp3":
-                            newName = file.getID3v1Tag().getSongTitle() + ".mp3";
+                            newName = trackName + ".mp3";
                             break;
                         default:
                             //should never happen as the view I made uses a comboBox to select
@@ -202,6 +214,7 @@ public class MP3NameChangerController {
                             JOptionPane.showMessageDialog(null,"Error!\n Unrecognized rename format!");
                             break;
                     }
+
                     //rename file if a pattern matches a predefined pattern and the newName is generated.
                     if (!newName.equals("")){
                         File newFile = new File(pathToFolder + newName);
@@ -215,7 +228,7 @@ public class MP3NameChangerController {
                     }
 
                 } else {
-                    System.out.println("File " + file.getMp3file().getName() + " is missing required ID3v1 Tags");
+                    System.out.println("File " + file.getMp3file().getName() + " is missing required Tags");
                 }
 
             } catch (IOException e) {
@@ -223,10 +236,10 @@ public class MP3NameChangerController {
             } catch (TagException e) {
                 System.out.println(e.getMessage());
             }
-
-            model.getMp3FilesList().clear();
-            updateMp3Paths(model.getWorkingDir().toString());
-            updateView(new updateObj(model.getMp3FilesList()));
         }
+
+        model.getMp3FilesList().clear();
+        updateMp3Paths(model.getWorkingDir().toString());
+        updateView(new updateObj(model.getMp3FilesList()));
     }
 }
