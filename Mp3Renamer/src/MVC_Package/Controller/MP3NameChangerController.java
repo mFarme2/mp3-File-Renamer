@@ -1,7 +1,7 @@
 package MVC_Package.Controller;
 
+import InterfAndObjs.MP3Viewable;
 import InterfAndObjs.updateObj;
-import MVC_Package.View.MP3NameChangerView;
 import MVC_Package.Model.MP3NameChangerModel;
 import org.farng.mp3.MP3File;
 import org.farng.mp3.TagException;
@@ -19,14 +19,14 @@ import java.util.Scanner;
  */
 public class MP3NameChangerController {
     private MP3NameChangerModel model;
-    private MP3NameChangerView view;
+    private MP3Viewable view;
 
     private boolean modelAndViewSetYet = false; //controller must set model and view before any methods can be used.
 
     public MP3NameChangerController(){
     }
 
-    public void setModelAndView(MP3NameChangerView view, MP3NameChangerModel model){
+    public void setModelAndView(MP3Viewable view, MP3NameChangerModel model){
         this.view = view;
         this.model = model;
         modelAndViewSetYet = true;

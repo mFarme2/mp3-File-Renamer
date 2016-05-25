@@ -1,5 +1,6 @@
 package MVC_Package.Application;
 
+import InterfAndObjs.MP3Viewable;
 import MVC_Package.Controller.MP3NameChangerController;
 import MVC_Package.View.MP3NameChangerView;
 import MVC_Package.Model.MP3NameChangerModel;
@@ -12,7 +13,7 @@ import javax.swing.SwingUtilities;
 public class App1 {
     private static MP3NameChangerController controller;
     private static MP3NameChangerModel model;
-    private static MP3NameChangerView view;
+    private static MP3Viewable view;
 
     public static void main(String[] args){
         SwingUtilities.invokeLater(new Runnable(){
@@ -22,7 +23,6 @@ public class App1 {
                 model = new MP3NameChangerModel(controller);
                 view = new MP3NameChangerView(controller);
 
-                //view.setVisible(true);
                 controller.setModelAndView(view, model);
                 controller.updateModel();
             }

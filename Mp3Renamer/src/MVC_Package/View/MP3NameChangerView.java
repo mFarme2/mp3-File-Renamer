@@ -18,6 +18,7 @@ public class MP3NameChangerView extends javax.swing.JFrame implements MP3Viewabl
     public MP3NameChangerView(MP3NameChangerController controller) {
         this.controller = controller;
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
